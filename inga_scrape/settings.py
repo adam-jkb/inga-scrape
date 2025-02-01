@@ -1,4 +1,4 @@
-# Scrapy settings for bulvar_scrape project
+# Scrapy settings for inga_scrape project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,6 +7,8 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+# unused as of yet
+# it can be reworked to detect if we get a captcha
 class EmptyFilter:
         def __init__(self, feed_options):
             self.feed_options = feed_options
@@ -16,52 +18,56 @@ class EmptyFilter:
                 return True
             return False
 
-BOT_NAME = "bulvar_scrape"
+BOT_NAME = "inga_scrape"
 
-SPIDER_MODULES = ["bulvar_scrape.spiders"]
-NEWSPIDER_MODULE = "bulvar_scrape.spiders"
+SPIDER_MODULES = ["inga_scrape.spiders"]
+NEWSPIDER_MODULE = "inga_scrape.spiders"
 
 
+# overwritten below
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "bulvar_scrape (+http://www.yourdomain.com)"
+#USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0'
 
+# ingatlan.com does not want crawlers
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
-#ROBOTSTXT_OBEY = False
+#ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
+# slow down so we dont get flagged
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
+#CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+#DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
-#CONCURRENT_REQUESTS_PER_IP = 16
+#CONCURRENT_REQUESTS_PER_IP = 1
 
 # Disable cookies (enabled by default)
-COOKIES_ENABLED = False
+#COOKIES_ENABLED = False
+COOKIES_ENABLED = True
 
 # Disable Telnet Console (enabled by default)
 TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 #DEFAULT_REQUEST_HEADERS = {
-#    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-#    "Accept-Language": "en",
 #}
+from inga_scrape.ua import *
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "bulvar_scrape.middlewares.ScrapeBulvarSpiderMiddleware": 543,
+#    "inga_scrape.middlewares.ScrapeBulvarSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "bulvar_scrape.middlewares.ScrapeBulvarDownloaderMiddleware": 543,
+#    "inga_scrape.middlewares.ScrapeBulvarDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -73,7 +79,7 @@ TELNETCONSOLE_ENABLED = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "bulvar_scrape.pipelines.ScrapeBulvarPipeline": 300,
+#    "inga_scrape.pipelines.ScrapeBulvarPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -85,13 +91,15 @@ AUTOTHROTTLE_START_DELAY = 1
 AUTOTHROTTLE_MAX_DELAY = 20
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-AUTOTHROTTLE_TARGET_CONCURRENCY = 3.0
+#AUTOTHROTTLE_TARGET_CONCURRENCY = 3.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-HTTPCACHE_ENABLED = True
+#HTTPCACHE_ENABLED = True
+HTTPCACHE_ENABLED = False
 HTTPCACHE_EXPIRATION_SECS = 240
 HTTPCACHE_DIR = "httpcache"
 HTTPCACHE_IGNORE_HTTP_CODES = []
@@ -112,7 +120,8 @@ FEEDS = {
         'item_export_kwargs': {
             'export_empty_fields': True,
         },
-        'item_filter': EmptyFilter,
-        'overwrite': False
+        #'item_filter': EmptyFilter,
+        #'overwrite': False
+        'overwrite': True
     },
 }

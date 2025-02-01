@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+# encoding: utf-8
+DEFAULT_REQUEST_HEADERS = {
+	"Host": "ingatlan.com",
+	"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+	"Accept-Language": "en-US,en;q=0.5",
+	"Accept-Encoding": "gzip, deflate, br, zstd",
+	"DNT": "1",
+	"Sec-GPC": "1",
+	"Alt-Used": "ingatlan.com",
+#	"Connection": "keep-alive",
+#	"Cookie": "PHPSESSID=d5b0f7c557674a36618b368208b3ea99; _cfuvid=d38OPkJWSUSsq.B77pan6ICsJMV5IuQJkoqfXfir2Fg-1738422170475-0.0.1.1-604800000; advCC=2501318655869777308464; bbid=6674862238422713; last_location=Budapest XI. kerÃ¼let; cf_clearance=PONtb07uiZVWvnP9gd1d8apqlTgCEPLBbpSDFkB8kRg-1738423665-1.2.1.1-VSqzkvKn51gQ60I3jDHFo5RySefhchYTo.yBjqSft6cN9EyWNCaOjfHQOqEziVIn8Xn2D4VBQ1zn9mS9K9A1IZmi1NmuoE29xxziuIBuVGt5T5El.CvTU8de8.US.k6sE360GGjOw4gJTNy1EcJ.K3B1YvhFuNxJssadNLyQxcHOYjd0eI.CLzTcODbRxNJZKQueFEpGTMm2IDKijNUHUhZ7rZJoR3vbTIhYfOozzZzdZxCxxDC7tEny9hceYFhkuZ861_5ZUj72jM7SnEYryGcwDw06qCnBIiS1zV78OB0",
+	"Upgrade-Insecure-Requests": "1",
+	"Sec-Fetch-Dest": "document",
+	"Sec-Fetch-Mode": "navigate",
+	"Sec-Fetch-Site": "same-origin",
+	"Priority": "u=0, i",
+    'TE': 'trailers'
+}
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",

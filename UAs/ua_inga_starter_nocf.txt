@@ -1,0 +1,32 @@
+accept:
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding:
+gzip, deflate, br, zstd
+accept-language:
+en-US,en;q=0.9
+cache-control:
+max-age=0
+cookie:
+advCC=2501313361631178220967; cf_clearance=5lwrlwWHOqSJvHObFtcanIeg1gfjybjQr5ss.EwbMvs-1738329864-1.2.1.1-U2wMm2XQcTC.Y6O5v8.O1BmgMqEOrFYHPLlMPFd6nbI.q9TZ5u4.R0vHQ72pr4OcTOoaI4Jr8IApzfEVNKuVV9vvnM2p6I2lngvsbCNN45yS3fXYrjUMLAjC8n0FNHZtd37HtafCz7Jb7WNnxAoJFtPD8GBXVdhJKYMWNwltbysqCQPNQQ.nlieUPp6k8YEmU69y5CpGsPTpPHgYG7h.Vsykj93r_X8koZ3h34LD8KB6qAAtsgsMf_JU5DLKQ6jQ3WlAEVrLp0h3Gx1CtB46hcrWVIPeOyX_naKoywcOEN0; CookieConsent={stamp:%27SqEstoZvslYtHROKVBpHKXaQyElmbAc4Wl1o7nlSzn2PGmOQMlqLaw==%27%2Cnecessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:false%2Cmethod:%27explicit%27%2Cver:2%2Cutc:1738329870152%2Cregion:%27hu%27}; __eoi=ID=d9dc3053ef00334e:T=1738330014:RT=1738330014:S=AA-AfjZQAcxpacsABxjXs8WJj0sX; bbid=1943328138330031; last_location=Budapest XI. kerÃ¼let; PHPSESSID=d43bb4bbacc0c8aedd11513f5bd3e4f1; _cfuvid=lNHiIiNc.zKBVdcBckO8k_XvxP5GZk.v5QMJgS8YL7k-1738413868696-0.0.1.1-604800000
+dnt:
+1
+priority:
+u=0, i
+sec-ch-ua:
+"Not A(Brand";v="8", "Chromium";v="132"
+sec-ch-ua-mobile:
+?0
+sec-ch-ua-platform:
+"Linux"
+sec-fetch-dest:
+document
+sec-fetch-mode:
+navigate
+sec-fetch-site:
+none
+sec-fetch-user:
+?1
+upgrade-insecure-requests:
+1
+user-agent:
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36

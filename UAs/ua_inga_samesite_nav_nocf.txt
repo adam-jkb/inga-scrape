@@ -1,0 +1,32 @@
+accept:
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding:
+gzip, deflate, br, zstd
+accept-language:
+en-US,en;q=0.9
+cache-control:
+max-age=0
+cookie:
+advCC=2501313361631178220967; CookieConsent={stamp:%27SqEstoZvslYtHROKVBpHKXaQyElmbAc4Wl1o7nlSzn2PGmOQMlqLaw==%27%2Cnecessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:false%2Cmethod:%27explicit%27%2Cver:2%2Cutc:1738329870152%2Cregion:%27hu%27}; bbid=1943328138330031; _cfuvid=lNHiIiNc.zKBVdcBckO8k_XvxP5GZk.v5QMJgS8YL7k-1738413868696-0.0.1.1-604800000; PHPSESSID=d8ba975df1912936627b429cdc71b47e; cf_clearance=2ksFTNcWQd_S9jgd36FP.XHg0lc.2J4S0kM4Pk.t3gA-1738420236-1.2.1.1-AgdDzJ44SBbLnggVOae8NRAABtsaqZrCpBvaFP4OgFdGiMdiJONU3CP6ZF1YwqiLSFG_2qXSnVLsw3bE.BSV74km6.FH8AcQGYY4.o39hEmW0wESFXdO.OMRH7EfdY1qk9Ei0uGX8GqHDCgRLLeVMBBOWhab5fuFbduXsdzIYT5uCoF8vUxxXjts04dfs8IvEpY2bMehrnuf7c61rVjnXYDzA0w.YHriAGvg7Uwc7K_rS0UJYaCuMqJwlIsTbJFr7o5t9AxADQeGIdBglfHFPHYChslFNBYVlqcicWkHcb8; __eoi=ID=d9dc3053ef00334e:T=1738330014:RT=1738420406:S=AA-AfjZQAcxpacsABxjXs8WJj0sX; last_location=Budapest IX. kerÃ¼let
+dnt:
+1
+priority:
+u=0, i
+sec-ch-ua:
+"Not A(Brand";v="8", "Chromium";v="132"
+sec-ch-ua-mobile:
+?0
+sec-ch-ua-platform:
+"Linux"
+sec-fetch-dest:
+document
+sec-fetch-mode:
+navigate
+sec-fetch-site:
+same-origin
+sec-fetch-user:
+?1
+upgrade-insecure-requests:
+1
+user-agent:
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36

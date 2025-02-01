@@ -1,0 +1,56 @@
+accept:
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding:
+gzip, deflate, br, zstd
+accept-language:
+en-US,en;q=0.9
+cache-control:
+max-age=0
+cookie:
+FCCDCF=%5Bnull%2Cnull%2Cnull%2C%5B%22CQMGLkAQMGLkAEsACBENBbFoAP_gAEPgAACgINJD7C7FbSFCwH5zaLsAMAhHRsAAQoQAAASBAmABQAKQIAQCgkAYFASgBAACAAAAICRBIQIECAAAAUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAIAAEAAIAAAAEAAAmAgAAIIACAAAgAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAQOhSD2F2K2kKFkPCmwXYAYBCujYAAhQgAAAkCBMACgAUgQAgFJIAgCIFAAAAAAAAAQEiCQAAQABAAAIACgAAAAAAIAAAAAAAQQAABAAIAAAAAAAAEAQAAIAAQAAAAIAABEhAAAQQAEAAAAAAAQAAAAAAAAAAABAAA%22%2C%222~70.89.93.108.122.149.196.236.259.311.313.323.358.415.442.486.494.495.540.574.609.864.981.1029.1048.1051.1095.1097.1126.1205.1276.1301.1365.1415.1449.1514.1570.1577.1598.1651.1716.1735.1753.1765.1870.1878.1889.1958.1960.2072.2253.2299.2373.2415.2506.2526.2531.2568.2571.2575.2624.2677.2778~dv.%22%2C%22E8EDEDE6-45E4-41E4-9413-2E4C9973A61E%22%5D%5D; __gads=ID=07bc6ba505e4f5fb:T=1738329166:RT=1738419867:S=ALNI_MZH7O8ZcQkmpdG5l_mf5tmja1kmuA; __gpi=UID=0000102abb81899f:T=1738329166:RT=1738419867:S=ALNI_MY2MxRkYeCFAiYh2M_KCrNqKTpMZw; __eoi=ID=79984e318be2f8b5:T=1738329166:RT=1738419867:S=AA-AfjYRbvPyvGarMzHc0QDWRoew; FCNEC=%5B%5B%22AKsRol8R73lmgmzHG9yfu8867cxk3uvl_RSSDCDAYXu0oe2zl8DpBCstjLofAqJBC4yftewZS1AqQiY4zLGeHRcNU2k8djGPI2QL7zf8GdTfw6PFGNdjMBzxPxrZAPqdr90naGVIbA-RC6mdnVHRgxc8zf--kO9nAQ%3D%3D%22%5D%5D
+device-memory:
+8
+dnt:
+1
+downlink:
+10
+dpr:
+1
+ect:
+4g
+priority:
+u=0, i
+rtt:
+0
+sec-ch-prefers-color-scheme:
+light
+sec-ch-prefers-reduced-motion:
+no-preference
+sec-ch-ua:
+"Not A(Brand";v="8", "Chromium";v="132"
+sec-ch-ua-arch:
+"x86"
+sec-ch-ua-full-version:
+"132.0.6834.110"
+sec-ch-ua-mobile:
+?0
+sec-ch-ua-model:
+""
+sec-ch-ua-platform:
+"Linux"
+sec-ch-ua-platform-version:
+"6.12.10"
+sec-fetch-dest:
+document
+sec-fetch-mode:
+navigate
+sec-fetch-site:
+none
+sec-fetch-user:
+?1
+upgrade-insecure-requests:
+1
+user-agent:
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+viewport-width:
+1961
