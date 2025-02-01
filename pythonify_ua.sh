@@ -17,7 +17,11 @@ else
 	OUTPUT="$2"
 fi
 
+# ff ua dumps need an extra step
+# put ff in name of ff ua dumps
 START=$(cat $1)
+# its kinda fucked but ill fix it later
+# until then manually fix user_agent and TE
 echo "$1" | grep -q "ff" && START=$(sed 's/: /:\n/g' $1)
 DEDUPE=$(echo "$START" | sed 's/"/\\"/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\\"\n/\\""\n/g')
 SEDD=$(echo "$DEDUPE" |  sed -e ':a' -e 'N' -e '$!ba' -e 's/:\n/": "\n/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/"\n/"/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/"\n"/g' | sed 's/""/""\n"/g')
