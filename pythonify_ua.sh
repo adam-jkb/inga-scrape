@@ -16,25 +16,21 @@ if [ $# -eq 1 ] || [ "$1" = "$2" ]; then
 else 
 	OUTPUT="$2"
 fi
-
-# ff ua dumps need an extra step
-# put ff in name of ff ua dumps
+UA=$(cat $1 | grep Mozilla/)
 START=$(cat $1)
-# its kinda fucked but ill fix it later
-# until then manually fix user_agent and TE
 echo "$1" | grep -q "ff" && START=$(sed 's/: /:\n/g' $1)
 DEDUPE=$(echo "$START" | sed 's/"/\\"/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\\"\n/\\""\n/g')
 SEDD=$(echo "$DEDUPE" |  sed -e ':a' -e 'N' -e '$!ba' -e 's/:\n/": "\n/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/"\n/"/g' | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/"\n"/g' | sed 's/""/""\n"/g')
 STARTL=$(echo "\t\"$SEDD")
-ENDL=$(echo "$STARTL" | head -n -1)
-COMMAS=$(echo "$ENDL" | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/,\n\t/g' )
-
+COMMAS=$(echo "$STARTL" | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/,\n\t/g' )
+#COMMENT="$COMMAS"
+COMMENT=$(echo "$COMMAS" | sed 's/"cookie":/#"cookie":/g' | sed 's/"Cookie":/#"Cookie":/g' | sed 's/"Connection":/#"Connection":/g' | sed 's/"connection":/#"connection":/g')
 
 echo "#!/usr/bin/env python" > "$OUTPUT"
 echo "# encoding: utf-8" >> "$OUTPUT"
 echo "DEFAULT_REQUEST_HEADERS = {" >> "$OUTPUT"
 
-echo "$COMMAS" >> "$OUTPUT"
+echo "$COMMENT\"" >> "$OUTPUT"
 
 echo "}" >> "$OUTPUT"
-echo "USER_AGENT = '$(tail -n 1 $1)'" >> "$OUTPUT"
+echo "USER_AGENT = '$UA'" >> "$OUTPUT"
